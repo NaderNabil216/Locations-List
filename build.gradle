@@ -19,9 +19,40 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
+ext {
+    supportLibraryVersion = '28.0.0'
+    playServicesVersion = '11.8.0'
+    TargetSdk = 28
+    minSdk = 21
+    VERISON_CODE = 1
+    VERSION_NAME = "1.0"
+
+    BUTTERKNIFE_V = "8.8.1"
+
+    RETROFIT_V = "2.3.0"
+    RETROFIT_LOGGER = "3.8.0"
+
+    COMPONENT_ARC = "1.1.1"
+    RX_ANDROID_VERSION = "2.0.1"
+
+    NINETENDO_V = "2.4.0"
+
+    SLIDER_V = "1.1.5@aar"
+
+    SWIPE_LAYOUT_V = "1.2.0@aar"
+
+    EXPANDABLE_TEXTVIEW_V = "1.0.5"
+
+    CELL_LABEL_V = "1.1.2"
+
+    FRAGMANTATION_V = "1.1.9"
+
+    DIMENSIONS_V = "1.0.5"
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
