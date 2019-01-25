@@ -1,9 +1,11 @@
-package com.nadernabil216.locationslist;
+package com.nadernabil216.locationslist.ui.home_screen.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.nadernabil216.locationslist.R;
+
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

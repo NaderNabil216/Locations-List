@@ -3,6 +3,7 @@
     package="com.nadernabil216.locationslist">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.home_screen.view.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.add_new_location_screen.view.AddNewLocationActivity" />
+        <activity android:name=".ui.location_detail_screen.view.LoctionDetailActivity"></activity>
     </application>
 
 </manifest>
