@@ -1,13 +1,15 @@
 package com.nadernabil216.locationslist.rest;
 
 
+import com.nadernabil216.locationslist.models.responses.AltitudeResponse;
 
-import retrofit2.Response;
+import java.util.List;
+
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
-import rx.Observable;
 
 public interface Api {
-    @GET("popular")
-    Observable<Response<PopularMoviesResponse>> getMovies(@Query("api_key") String apiKey, @Query("page") int page, @Query("language") String language);
+    @GET("/maps/api/elevation/json")
+    Call<List<AltitudeResponse>> getAltitiude (@Query("locations") String latAndLng, @Query("key") String key);
 }
