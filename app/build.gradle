@@ -61,7 +61,8 @@ dependencies {
     annotationProcessor "android.arch.lifecycle:compiler:$COMPONENT_ARC"
     implementation "android.arch.persistence.room:runtime:$COMPONENT_ARC"
     annotationProcessor "android.arch.persistence.room:compiler:$COMPONENT_ARC"
-
+    //location
+    implementation 'com.github.david-serrano:locationprovider:1.2'
     // gson
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.android.support:multidex:1.0.3'
