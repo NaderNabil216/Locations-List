@@ -1,6 +1,7 @@
 package com.nadernabil216.locationslist.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +12,8 @@ import android.view.ViewGroup;
 import com.nadernabil216.locationslist.R;
 import com.nadernabil216.locationslist.databinding.ItemLocationBinding;
 import com.nadernabil216.locationslist.models.objects.Location;
+import com.nadernabil216.locationslist.ui.location_detail_screen.view.LoctionDetailActivity;
+import com.nadernabil216.locationslist.utils.Constants;
 
 import java.util.ArrayList;
 
@@ -37,7 +40,9 @@ public class LocationsAdapter extends RecyclerView.Adapter<LocationsAdapter.View
         Location location = locations.get(i);
         viewHolder.itemLocationBinding.tvTitle.setText(location.getTitle());
         viewHolder.itemView.setOnClickListener(view -> {
-            // TODO: 1/26/2019 go to detail screen
+            Intent intent = new Intent(context , LoctionDetailActivity.class);
+            intent.putExtra(Constants.IntentKeys.locationId,location.get_id());
+            context.startActivity(intent);
         });
     }
 
