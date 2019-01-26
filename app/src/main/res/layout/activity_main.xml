@@ -28,5 +28,13 @@
             android:layout_margin="@dimen/fb_margin_right_icon"
             android:src="@drawable/ic_add_black_24dp"
             app:fabSize="normal" />
+
+        <TextView
+            android:id="@+id/tvNoData"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Locations Saved" />
     </RelativeLayout>
 </layout>
