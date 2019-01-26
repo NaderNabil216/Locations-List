@@ -6,6 +6,6 @@ public class Constants {
     }
 
     public static class ConstantsKeys {
-        public static final String apiKey = "AIzaSyDKN9T82UxQ00lM8GCWyVNVEITFrQNCDRA";
+        public static final String apiKey = "";
     }
 }

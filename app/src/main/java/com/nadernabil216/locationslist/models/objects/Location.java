@@ -3,27 +3,28 @@ package com.nadernabil216.locationslist.models.objects;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
 @Entity(tableName = "location_table")
 public class Location {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    private int _id ;
+    private int _id;
 
     @ColumnInfo(name = "lat")
-    private double lat =0.0;
+    private double lat = 0.0;
 
     @ColumnInfo(name = "lng")
-    private double lng =0.0;
+    private double lng = 0.0;
 
     @ColumnInfo(name = "alt")
-    private double alt =0.0;
+    private double alt = 0.0;
 
     @ColumnInfo(name = "currentDate")
-    private String currentDate ;
-
+    private String currentDate = "";
+    @NonNull
     @ColumnInfo(name = "title")
-    private String title ;
+    private String title = "";
 
     public Location() {
     }

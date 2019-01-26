@@ -11,5 +11,5 @@ import retrofit2.http.Query;
 
 public interface Api {
     @GET("/maps/api/elevation/json")
-    Call<List<AltitudeResponse>> getAltitiude (@Query("locations") String latAndLng, @Query("key") String key);
+    Call<AltitudeResponse> getAltitiude (@Query("locations") String latAndLng, @Query("key") String key);
 }

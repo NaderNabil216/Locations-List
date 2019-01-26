@@ -23,6 +23,7 @@ public class LocationDetailViewModel extends BaseViewModel {
         this.locationDetailCallBack = locationDetailCallBack;
     }
 
+    // select location from database via locationId
     public void getLocationDetail(Context context , int locationId){
         locationsReprosatory = new LocationsReprosatory(context);
         locationsReprosatory.getLocation(locationId).observe((LifecycleOwner) context, new Observer<Location>() {

@@ -1,6 +1,7 @@
 package com.nadernabil216.locationslist.database;
 
 import android.arch.lifecycle.LiveData;
+import android.arch.persistence.db.SimpleSQLiteQuery;
 import android.content.Context;
 import android.os.AsyncTask;
 

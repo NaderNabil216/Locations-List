@@ -57,7 +57,6 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$COMPONENT_ARC"
     implementation "android.arch.lifecycle:runtime:$COMPONENT_ARC"
     implementation "android.arch.lifecycle:reactivestreams:$COMPONENT_ARC"
-    implementation "android.arch.paging:runtime:1.0.1"
     implementation "android.arch.lifecycle:viewmodel:$COMPONENT_ARC"
     annotationProcessor "android.arch.lifecycle:compiler:$COMPONENT_ARC"
     implementation "android.arch.persistence.room:runtime:$COMPONENT_ARC"

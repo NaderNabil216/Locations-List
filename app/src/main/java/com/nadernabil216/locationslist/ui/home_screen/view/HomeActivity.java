@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity implements HomeCallback {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         binding.setVm(viewModel);
         viewModel.setBinding(binding);
+        viewModel.setContext(this);
         viewModel.setHomeCallback(this);
         locations = new ArrayList<>();
         adapter = new LocationsAdapter(this, locations);
@@ -97,10 +98,12 @@ public class HomeActivity extends AppCompatActivity implements HomeCallback {
         onBackPressed();
     }
 
+    // clear old list and fill it with new list to notify the adapter with changes
     @Override
     public void setData(List<Location> locations) {
         if (!locations.isEmpty()) {
             binding.tvNoData.setVisibility(View.GONE);
+            this.locations.clear();
             this.locations.addAll(locations);
             adapter.notifyDataSetChanged();
         }
